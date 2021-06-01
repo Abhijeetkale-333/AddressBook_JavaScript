@@ -146,7 +146,7 @@ let deletContact=()=>{
 
 let choice = 0;
 do{
-    console.log("Press: \n1) Add Contact \n2) Edit Contact \n3) View Contact  \n4) Delete Contact \n0)Exit:");
+    console.log("Press: \n1) Add Contact \n2) Edit Contact \n3) View Contact  \n4) Delete Contact \n5) Count Contacts \n0)Exit:");
     choice = Number(prompt("Enter your choice: "));
     if(choice == 1){
         addContact();
@@ -164,5 +164,8 @@ do{
     }
     if(choice == 4){
         deletContact();
+    }
+    if(choice == 5){
+        console.log("Number of Contacts: "+contactArray.reduce(contact=>contact + 1, 0));
     }
 }while(choice != 0);
