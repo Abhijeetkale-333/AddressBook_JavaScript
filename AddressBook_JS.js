@@ -1,5 +1,5 @@
 var prompt = require('prompt-sync')();
-class Contact {
+class contact {
 
     firstName;
     lastName;
