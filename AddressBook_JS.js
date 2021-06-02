@@ -1,3 +1,4 @@
+
 const prompt=require('prompt-sync')();
 const NAME_REGEX_PATTERN = /^[A-Z]{1}[a-z]{2,}$/;
 const ADDRESS_REGEX_PATTERN = /^[a-zA-z]{3,}$/;
