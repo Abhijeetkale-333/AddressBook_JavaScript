@@ -1,4 +1,3 @@
-
 const prompt=require('prompt-sync')();
 const NAME_REGEX_PATTERN = /^[A-Z]{1}[a-z]{2,}$/;
 const ADDRESS_REGEX_PATTERN = /^[a-zA-z]{3,}$/;
@@ -158,7 +157,7 @@ function searchByCityOrState(searchCityOrState, choice){
 
 let choice = 0;
 do{
-    console.log("Press: \n1) Add Contact \n2) Edit Contact \n3) View Contact  \n4) Delete Contact \n5) Count Contacts \n6) Search City or State \n0)Exit:");
+    console.log("Press: \n1) Add Contact \n2) Edit Contact \n3) View Contact  \n4) Delete Contact \n5) Count Contacts \n6) Search City or State \n7) View Contact By city or state \n0)Exit:");
     choice = Number(prompt("Enter your choice: "));
     if(choice == 1){
         addContact();
@@ -182,6 +181,18 @@ do{
     }
     if(choice == 6){
         console.log("1) Search By City  2) Search By State");
+        let ch = Number(prompt("Enter your choice: "));
+        switch (ch){
+            case 1: let city = prompt("Enter the city name: ");
+                    searchByCityOrState(city, 1);
+                    break;
+            case 2: let state = prompt("Enter the state name: ");
+                    searchByCityOrState(state, 2);
+                    break;
+        }
+    }
+    if(choice == 7){
+        console.log("1) View By City  2) View By State");
         let ch = Number(prompt("Enter your choice: "));
         switch (ch){
             case 1: let city = prompt("Enter the city name: ");
