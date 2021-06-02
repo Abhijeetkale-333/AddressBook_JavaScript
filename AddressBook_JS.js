@@ -4,7 +4,7 @@ const ADDRESS_REGEX_PATTERN = /^[a-zA-z]{3,}$/;
 const PINCODE_REGEX_PATTERN = /^[0-9]{6}$/;
 const PHONE_NUMBER_PATTERN = /^[9][1][6-9]{1}[0-9]{9}$/; 
 const EMAIL_REGEX_PATTERN = /^[a-zA-Z0-9]+([._+-][0-9a-zA-Z]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?$/;
-let contactArray = new Array();
+let contactArray = [ ];
 
 class Contact {
 
