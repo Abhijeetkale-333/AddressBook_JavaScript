@@ -18,7 +18,7 @@ class Contact {
     email;
 
     constructor(firstName,lastName,address,city,state,zip,phoneNumber,email){
-        if(!NAME_REGEX_PATTERN.test(firstName)) throw 'Please enter valid firstname.'
+        if(!NAME_REGEX_PATTERN.test(firstName)) throw 'Please enter valid Firstname.'
         { 
             this.firstName = firstName;
         }
